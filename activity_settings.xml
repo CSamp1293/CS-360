@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_profile"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="Change Password"
+        app:cornerRadius="20dp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_clear_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_change_password"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="Clear Data"
+        app:cornerRadius="20dp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/button_clear_data"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_notifications"
+        android:layout_marginTop="8dp"
+        android:text="Enable Notifications"
+        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_sms_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch_notifications"
+        android:layout_marginTop="8dp"
+        android:text="Enable SMS Notifications"
+        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/text_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/switch_sms_notifications"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_about_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_about"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="About the App"
+        app:cornerRadius="20dp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_about_app"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="Help &amp; Support"
+        app:cornerRadius="20dp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+</RelativeLayout>
